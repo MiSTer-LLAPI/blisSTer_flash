@@ -11,8 +11,8 @@
 # system:
 
 # Use the following 3 lines on Unix and Mac OS X:
-USBFLAGS=   `libusb-config --cflags`
-USBLIBS=    `libusb-config --libs`
+USBFLAGS=-I/opt/linaro/include
+USBLIBS=-L/opt/linaro/lib -lusb-1.0 -lusb
 EXE_SUFFIX=
 
 # Use the following 3 lines on Windows and comment out the 3 above:
@@ -22,13 +22,13 @@ EXE_SUFFIX=
 
 CC=				gcc
 CXX=			g++
-CFLAGS=			-O2 -Wall $(USBFLAGS)
+CFLAGS=			-O2 -fPIC -Wall $(USBFLAGS)
 LIBS=			$(USBLIBS)
 ARCH_COMPILE=	
 ARCH_LINK=		
 
 OBJ=		main.o usbcalls.o
-PROGRAM=	bootloadHID$(EXE_SUFFIX)
+PROGRAM=	blisSTer_flash$(EXE_SUFFIX)
 
 all: $(PROGRAM)
 

@@ -14,10 +14,10 @@
 #include <errno.h>
 #include "usbcalls.h"
 
-#define IDENT_VENDOR_NUM        0x16c0
-#define IDENT_VENDOR_STRING     "obdev.at"
-#define IDENT_PRODUCT_NUM       1503
-#define IDENT_PRODUCT_STRING    "HIDBoot"
+#define IDENT_VENDOR_NUM        0x16d0
+#define IDENT_VENDOR_STRING     "BLISS-BOX"
+#define IDENT_PRODUCT_NUM       0x0a5f
+#define IDENT_PRODUCT_STRING    "BLISS-BOX UPDATOR"
 
 /* ------------------------------------------------------------------------- */
 

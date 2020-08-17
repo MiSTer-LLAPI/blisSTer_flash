@@ -121,9 +121,9 @@ static int          didUsbInit = 0;
     }
     if(handle != NULL){
         int rval, retries = 3;
-        if(usb_set_configuration(handle, 1)){
-            fprintf(stderr, "Warning: could not set configuration: %s\n", usb_strerror());
-        }
+        //if(usb_set_configuration(handle, 1)){
+            //fprintf(stderr, "Warning: could not set configuration: %s\n", usb_strerror());
+        //}
         /* now try to claim the interface and detach the kernel HID driver on
          * linux and other operating systems which support the call.
          */
